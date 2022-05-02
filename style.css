@@ -1,0 +1,18 @@
+#title{
+    color:darkslategray;
+    background-color: honeydew;
+}
+
+#form{
+    background-color: honeydew;
+}
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+

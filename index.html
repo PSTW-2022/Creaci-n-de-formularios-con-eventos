@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+      <h1 id="title" class="text-center">FORMULARIO DE SINTOMAS</h1>
+    </header>
+
+    <article>
+      <!--INGRESA EL CORREO-->
+      <h2 class="container">Ingreso de datos</h2>
+      <section>
+        <div class="container">
+          <div class="row vh-100 justify-content-center align-items-center">
+            <div id= "form" class="cool-auto p-5">
+              <form action="">
+                <br>
+                <div class="mb-3">
+                  <label for="start">Fecha de ingreso de datos al sistema:</label>
+                  <div class="col-sm-10">
+                    <input type="date" id="start" name="trip-start"
+                      value="2022-05-02"
+                      min="2022-01-01" max="2022-12-31"> 
+                  </div>
+                </div>
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <div>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="usuario@ejemplo.com">
+                    </div>
+                  </div>
+                  <!--SE CREA EL CAMPO DE LA CONTRASEÑA-->
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword" onclick = "verde()">
+                    </div>
+                  </div>
+                  <!--SE VERIFICA QUE LAS CONTRASEÑAS SEAN IGUALES-->
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Verificar Contraseña</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword2"onclick = "verde2()" onchange="rojo2()">
+                    </div>
+                </div>
+                <br>
+                <!--AQUI SE CREAN LOS RADIO-->
+                <div>
+                    ¿Desea ingresar sintomas?
+                </div>
+                <br>
+                <!--RADIO 1-->
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" onclick="mostrar()">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      <!--TEXTO A MOSTRAR EN PANTALLA-->Si
+                    </label>
+                  </div>
+                <!--RADIO 2-->
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                    <!--TEXTO A MOSTRAR EN PANTALLA-->No
+                    </label>
+                  </div>
+                <br>
+                <!--AQUI SE CREAN LOS CHECK BOX-->
+                <div>
+                    Seleccione los sintomas presentados
+                </div>
+                <br>
+                <!--CHECK BOX 1-->
+                <div class="form-check" id="checkboxtodos">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Pérdida de gusto
+                    </label>
+                    <br>
+                <!--CHECK BOX 2--> 
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Pérdida de olfato
+                    </label>
+                    <br>
+                <!--CHECK BOX 3-->
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Fiebre o malestar
+                    </label>
+                    <br>
+                <!--CHECK BOX 4-->
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Dolor abdominal
+                    </label>
+                    <br>
+                <!--CHECK BOX 5-->
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Problemas respiratorios
+                    </label>
+                    <br>
+                    <br>
+                <!--SE CREA BOTÓN DE ENVIAR-->
+                <div>
+                    <button type="button" class="Boton_enviar">Enviar</button>
+                </div>
+                <br>
+                <!--SE CREA UN FOOTER DE INFORMACIÓN PARA EL USUARIO-->
+                <footer>
+                    Recuerde que sus resultados estarán listos en máximo una semana hábil (7 dias)
+                </footer>
+                <!--LIMPIADOR DE FORMULARIOS-->
+               
+            
+            </form>
+                
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+
+
+</body>
+</html>
