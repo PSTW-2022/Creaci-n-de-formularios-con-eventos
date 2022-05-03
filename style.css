@@ -6,6 +6,7 @@
 #form{
     background-color: honeydew;
 }
+/*Fecha de ingreso de datos*/
 label {
     display: block;
     font: 1rem 'Fira Sans', sans-serif;
@@ -15,4 +16,10 @@ input,
 label {
     margin: .4rem 0;
 }
+
+/*Cuando no es valido*/
+input:invalid {
+    border: red solid 3px;
+  }
+  
 

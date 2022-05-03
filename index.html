@@ -34,26 +34,55 @@
                 </div>
                 
                    
-                  
-    
-                    
-                    
+                            
+      
                     <div>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="usuario@ejemplo.com">
+                      <!--<input type="email" size="40" list="defaultEmails">-->
+                      <form>
+                        <div class="emailBox">
+                         
+                          <label for="emailAddress">Tu dirección de correoᵉ de la Universidad Nacional</label><br>
+                          <input id="emailAddress" type="email" size="64"                                                   
+                                 placeholder="nombreusuario@unal.edu.co" pattern=".+@unal.edu.co"
+                                 list="defaultEmails"
+                                 title="Por favor, solo proporciona una dirección de correoᵉ corporativa que te haya proporcionado la Universidad Nacional" required multiple  >
+                                 <datalist id="defaultEmails">
+                                  <option value="jbond007mi6.defence@unal.edu.co">
+                                  <option value="jbourneunknown@unal.edu.co">
+                                  <option value="jeussdenaza@unal.edu.co">
+                                  <option value="tonystarkindustries@unal.edu.co">
+                                  <option value="hulkgrrrrrrrr@unal.edu.co">
+                                </datalist>
+                        </div>
+                       
+                        <div class="messageBox">
+                          <label for="message">Solicitud</label><br>
+                          <textarea id="message" cols="80" rows="8" required
+                                    placeholder="Necesito la atencion de un fisioterapeuta dado que me encuentro con una lesion grave en mi brazo."></textarea>
+                        </div>
+                        <button type="button" onclick="validarEmail(emailAddress.value)" id="boton1" >Verificar</button>
+                         <div>
+                          
+                         </div>
+                       </form>
+                       
+                     
+                       <!--<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="usuario@ejemplo.com">--> 
                     </div>
                   </div>
                   <!--SE CREA EL CAMPO DE LA CONTRASEÑA-->
                   <div class="mb-3 row">
                     <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
                     <div class="col-sm-10">
-                      <input type="password" class="form-control" id="inputPassword" onclick = "verde()">
+                      <input type="password" class="form-control" id="inputPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="La clave debe contener al menos un caracter en mayuscula y un numero, minimo 8 digitos " onclick = "verde()">
                     </div>
                   </div>
                   <!--SE VERIFICA QUE LAS CONTRASEÑAS SEAN IGUALES-->
                   <div class="mb-3 row">
                     <label for="inputPassword" class="col-sm-2 col-form-label">Verificar Contraseña</label>
                     <div class="col-sm-10">
-                      <input type="password" class="form-control" id="inputPassword2"onclick = "verde2()" onchange="rojo2()">
+                      <input type="password" class="form-control" id="inputPassword2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="La clave debe contener al menos un caracter en mayuscula y un numero, minimo 8 digitos " onclick = "verde2()" onchange="rojo2()">
+                      
                     </div>
                 </div>
                 <br>
