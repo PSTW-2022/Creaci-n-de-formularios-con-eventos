@@ -94,26 +94,27 @@
                 <br>
                 <!--RADIO 1-->
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" onclick="mostrar()">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"  onclick="mostrar()">
                     <label class="form-check-label" for="flexRadioDefault1">
                       <!--TEXTO A MOSTRAR EN PANTALLA-->Si
                     </label>
                   </div>
                 <!--RADIO 2-->
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" onclick="noMostrar()"> 
                     <label class="form-check-label" for="flexRadioDefault2">
                     <!--TEXTO A MOSTRAR EN PANTALLA-->No
                     </label>
                   </div>
                 <br>
                 <!--AQUI SE CREAN LOS CHECK BOX-->
-                <div>
-                    Seleccione los sintomas presentados
-                </div>
-                <br>
+               
                 <!--CHECK BOX 1-->
-                <div class="form-check" id="checkboxtodos">
+                <div class="form-check" id="checkboxtodos" style="display: none;">
+                   <div>
+                    Seleccione los sintomas presentados
+                   </div>
+                   <br>
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                         Pérdida de gusto
